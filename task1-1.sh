@@ -1,14 +1,21 @@
 #!/bin/bash
-# programming technology - first task - first version
+# programming technology - first task
 path=$1
 archivename=$2
-IFS=$'\n'
-codefiles=$(find ~/ -depth -name "*.cpp")
-for var in $codefiles
+shift
+shift
+for format in "$@"
 do
-	cp $var $path
+	IFS=$'\n'
+	codefiles=$(find ~/ -depth -name "*.$format")
+	for var in $codefiles
+	do
+		cp $var $path
+	done
+	IFS=' '
 done
-tar -cvzf $archivename  $path
+IFS=$'\n'
+tar -czf $archivename  $path
 echo "done"
 
 
