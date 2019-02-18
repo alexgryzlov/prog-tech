@@ -5,7 +5,7 @@ shift 2
 mkdir "$path"
 for format in $@
 do
-    find ~/ -depth -name "*.$format" -exec cp {} "$path" \; 
+    find ~/ -depth -name "*.$format" -exec cp --parents {} "$path" \; 
 done
 tar -czf "$archivename" "$path" &> /dev/null 
 echo "done"
