@@ -4,7 +4,7 @@ sudo: require
 language: cpp
 compiler: gcc
 
-build_script:
+script:
   - mkdir build
   - cd build
   - cmake ..
