@@ -1,1 +1,5 @@
+dist: trusty
+sudo: require
 
+language: cpp
+compiler: gcc
