@@ -6,13 +6,18 @@ language: cpp
 compiler:
   - gcc
 
+env:
+  - COMMITTER_EMAIL="$(git log -1 $TRAVIS_COMMIT --pretty="%cE")"
+  
 script:
   - mkdir build
   - cd build
   - cmake ..
-  - makefasfa
+  - make
   
 notifications:
   email:
+    recipients:
+      - ${COMMITTER_EMAIL}
     on_success: always
     on_failure: always
