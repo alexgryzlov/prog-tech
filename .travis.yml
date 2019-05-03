@@ -11,3 +11,10 @@ script:
   - cd build
   - cmake ..
   - make
+  
+notifications:
+  email:
+    recipients:
+      - gryzlov.ad@yandex.ru
+    on_success: always
+    on_failure: always
