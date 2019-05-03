@@ -18,7 +18,5 @@ script:
   
 notifications:
   email:
-    recipients:
-      - ${COMMITTER_EMAIL}
     on_success: always
     on_failure: always
