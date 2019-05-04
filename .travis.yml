@@ -5,13 +5,11 @@ language: cpp
 
 compiler:
   - gcc
-  
-
 
 notifications:
-email:
-  on_success: always
-  on_failure: always
+  email:
+    on_success: always
+    on_failure: always
 
 script:
   - mkdir build
