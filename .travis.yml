@@ -1,16 +1,11 @@
 dist: trusty
 sudo: require
-
 language: cpp
-
-compiler:
-  - gcc
-
+compiler: gcc
 notifications:
   email:
     on_success: always
     on_failure: always
-
 script:
   - mkdir build
   - cd build
