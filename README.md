@@ -4,14 +4,23 @@
 
 #### Права администратора
 https://mail.alexgryzlov.me/admin
+
 Логин: admin@alexgryzlov.me
+
 Пароль: 1234
 #### Пользовательский интерфейс
 https://mail.alexgryzlov.me
+
 Логин: admin@alexgryzlov.me
+
 Пароль: 1234
 
 В ветке находятся конфиги docker-compse и mailu, Вы можете развернуть образ, заменив все вхождения ip адресса и домена на свои.
+
+Для этого используйте:
+```shell
+$ docker-compose -p mailu up -d
+```
 
 ### Описание выполнение задания
 1. Создал droplet на [https://digitalocean.com]
