@@ -11,6 +11,8 @@ https://mail.alexgryzlov.me
 Логин: admin@alexgryzlov.me
 Пароль: 1234
 
+В ветке находятся конфиги docker-compse и mailu, Вы можете развернуть образ, заменив все вхождения ip адресса и домена на свои.
+
 ### Описание выполнение задания
 1. Создал droplet на [https://digitalocean.com]
 2. Зарегестрировал домен на [https://namecheap.com]
